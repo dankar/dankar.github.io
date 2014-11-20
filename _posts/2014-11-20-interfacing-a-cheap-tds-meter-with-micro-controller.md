@@ -7,7 +7,7 @@ tags: [hydrowatch, hydroponics, tds, arduino]
 ---
 {% include JB/setup %}
 
-For one of my project I needed automatic measurements of TDS (Total Dissolved Solids) in a solution. There are a lot of cheap hand-held digital TDS meters available on ebay which made me give interfacing with one a shot.
+For one of my projects I need automatic measurements of TDS (Total Dissolved Solids) in a solution. There are a lot of cheap hand-held digital TDS meters available on ebay which made me give interfacing with one a shot.
 
 After probing around on the PCB for a while I did find a signal that could be used for extracting the data. The point with the signal can be seen in figure 1, on the resistor just below the black chip-on-board.
 
