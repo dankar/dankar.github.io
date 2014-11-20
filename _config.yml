@@ -12,7 +12,7 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 
-paginate: 10 #pagination based on number of posts
+paginate: 2
 paginate_path: "page:num"
 
 title : Testpage
@@ -71,7 +71,7 @@ JB :
   #
   ASSET_PATH : false
   
-  IMAGE_PATH = [BASE_PATH]/assets/img
+  
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
@@ -115,4 +115,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
