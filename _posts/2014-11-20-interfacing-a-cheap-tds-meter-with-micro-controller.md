@@ -2,8 +2,8 @@
 layout: post
 title: "Interfacing a cheap TDS meter with microcontroller"
 description: "In which I try to interface a cheap TDS meter from ebay with an Arduino Uno"
-category: 
-tags: []
+category: hydrowatch
+tags: [hydrowatch, hydroponics, tds, arduino]
 ---
 {% include JB/setup %}
 
