@@ -11,6 +11,10 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
+
+paginate: 10 #pagination based on number of posts
+paginate_path: "page:num"
+
 title : Jekyll Bootstrap-3
 tagline: Site Tagline
 author :
