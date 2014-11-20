@@ -12,7 +12,7 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 
-paginate: 2
+paginate: 10
 paginate_path: "page:num"
 
 title : Testpage
