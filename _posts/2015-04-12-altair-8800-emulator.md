@@ -74,11 +74,11 @@ The 88-DCDD reads and writes the files "disk1.bin" and "disk2.bin" from the SD c
 
 ![Figure 5]({{site.url}}/assets/img/cpm22.jpg)
 
-/Running CP\/M 2.2/
+_Running CP/M 2.2_
 
 ![Figure 6]({{site.url}}/assets/img/mbasic.jpg)
 
-/Running MBASIC, a version of BASIC that is nice enough to not be case sensitive!/
+_Running MBASIC, a version of BASIC that is nice enough to not be case sensitive!_
 
 Code and schematics
 -------------------
