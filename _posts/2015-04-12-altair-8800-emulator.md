@@ -33,15 +33,11 @@ I then decided to create a real schematic and PCB in KiCad and get it manufactur
 
 I was pretty happy with the results considering I hadn't done any PCB design previously:
 
-<div width="612">
-![Figure 1]({{site.url}}/assets/img/panel.sch.svg)
-</div>
+[<img src="/assets/img/panel-sch.svg" width="612">](/assets/img/panel-sch.svg)
 
 _Resulting schematic in KiCad_
 
-<div width="612">
-![Figure 2]({{site.url}}/assets/img/panel-brd.svg)
-</div>
+[<img src="/assets/img/panel-brd.svg" width="612">](/assets/img/panel-brd.svg)
 
 _Resulting PCB layout in KiCad_
 
