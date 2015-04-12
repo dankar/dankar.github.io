@@ -16,7 +16,9 @@ _An example of booting [CP/M 2.2](http://en.wikipedia.org/wiki/CP/M) on the fini
 Description
 -----------
 
-After completing the Intel 8080 emulator I got interested in the hardware part of the Altair 8800. The front panel consists of a bunch of LEDs showing the status, the data bus and the address bus. There are 16 simple switches acting as address, data and sense input (8 of the switches can be read by the CPU with port IO on port 0xff), as well as some momentary spring loaded switches that controls examine/deposit etc. The original Altair 8800 has additional features on the front panel which I considered unnecessary for my clone (protect/unprotect memory etc.)
+After completing the Intel 8080 emulator I got interested in the hardware part of the Altair 8800. The front panel consists of a bunch of LEDs showing the status, the data bus and the address bus. There are 16 simple switches acting as address, data and sense input (8 of the switches can be read by the CPU with port IO on port 0xff), as well as some momentary spring loaded switches that controls examine/deposit etc. 
+
+The original Altair 8800 has additional features on the front panel which I considered unnecessary for my clone (protect/unprotect memory etc.)
 
 The MCU running the emulator is currently an atmega328 (Arduino Uno). I might change this in the future, but the ease of prototyping won this time.
 
