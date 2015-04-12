@@ -68,7 +68,7 @@ The current code is fairly slow. A couple of times slower than the original Alta
 Running
 -------
 
-The code currently loads the file "88dskrom.bin" from the SD card and places it at 0xff00 in memory. This is a standard disk loader ROM for the 88-DCDD.
+The code currently loads the file "88dskrom.bin" from the SD card and places it at 0xff00 in memory. This is a standard disk loader ROM using the 88-DCDD (Altair disk drive system).
 
 The 88-DCDD reads and writes the files "disk1.bin" and "disk2.bin" from the SD card. Consequently, CP/M 2.2 can be booted by adding it as "disk1.bin" on the SD card and then starting execution from 0xff00.
 
