@@ -20,8 +20,8 @@ After completing the Intel 8080 emulator I got interested in the hardware part o
 
 The MCU running the emulator is currently an atmega328 (Arduino Uno). I might change this in the future, but the ease of prototyping won this time.
 
-Building the hardware
----------------------
+Construction
+------------
 
 The first revision of the panel was a prototype created on perfboard which soon got way out of hand.
 
@@ -61,7 +61,7 @@ The panel also has 23LC1024 SPI SRAM chip which is used for the Altair memory. T
 
 An MicroSD holder is mounted on the panel for storage of ROM and diskette files. The current build does not have the MicroSD holder but instead a full size SD holder mounted by wire to the 13 pin connector.
 
-Everything on the panel is attached to the SPI bus on the atmega328.
+Everything on the panel is attached to the SPI bus on the atmega328 and serial input/output from the Altair is done over the Arduino serial to USB.
 
 The current code is fairly slow. A couple of times slower than the original Altair 8800. There is room for optimization or even a faster MCU.
 
@@ -71,6 +71,14 @@ Running
 The code currently loads the file "88dskrom.bin" from the SD card and places it at 0xff00 in memory. This is a standard disk loader ROM for the 88-DCDD.
 
 The 88-DCDD reads and writes the files "disk1.bin" and "disk2.bin" from the SD card. Consequently, CP/M 2.2 can be booted by adding it as "disk1.bin" on the SD card and then starting execution from 0xff00.
+
+![Figure 5]({{site.url}}/assets/img/cpm22.jpg)
+
+/Running CP\/M 2.2/
+
+![Figure 6]({{site.url}}/assets/img/mbasic.jpg)
+
+/Running MBASIC, a version of BASIC that is nice enough to not be case sensitive!/
 
 Code and schematics
 -------------------
