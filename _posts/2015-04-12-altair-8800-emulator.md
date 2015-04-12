@@ -20,8 +20,8 @@ After completing the Intel 8080 emulator I got interested in the hardware part o
 
 The MCU running the emulator is currently an atmega328 (Arduino Uno). I might change this in the future, but the ease of prototyping won this time.
 
-Building
---------
+Building the hardware
+---------------------
 
 The first revision of the panel was a prototype created on perfboard which soon got way out of hand.
 
@@ -31,19 +31,25 @@ I'm not very good at perfboard layout and I soon painted myself into a corner wh
 
 I then decided to create a real schematic and PCB in KiCad and get it manufactured.
 
-The results were pretty okay considering I had no idea what I was doing:
+I was pretty happy with the results considering I hadn't done any PCB design previously:
 
 ![Figure 1]({{site.url}}/assets/img/panel.sch.svg)
 
+_Resulting schematic in KiCad_
+
 ![Figure 2]({{site.url}}/assets/img/panel-brd.svg)
+
+_Resulting PCB layout in KiCad_
 
 I placed an order from seeedstudio.com and a week later I had my PCBs.
 
 ![Figure 3]({{site.url}}/assets/img/pcb_manu.jpg)
-/The PCBs as delivered from seeedstudio.com/
+
+_The PCBs as delivered from seeedstudio.com_
 
 ![Figure 4]({{site.url}}/assets/img/finished_pcb.jpg)
-/After a lot of soldering/
+
+_After a lot of soldering_
 
 After a night of soldering I had the result shown in the first video.
 
