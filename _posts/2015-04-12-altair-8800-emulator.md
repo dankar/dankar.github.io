@@ -7,7 +7,7 @@ tags: [arduino]
 ---
 {% include JB/setup %}
 
-Over the winter I started working on an Intel 8080 emulator which later turned into an Altair 8800 emulator running on atmega328, complete with a hardware front panel. The Altair 8800 is coincidentally celebrating 40 years this year!
+Over the winter I started working on an [Intel 8080](http://en.wikipedia.org/wiki/Intel_8080) emulator which later turned into an [Altair 8800](http://en.wikipedia.org/wiki/Altair_8800) emulator running on atmega328, complete with a hardware front panel. The Altair 8800 is coincidentally celebrating 40 years this year!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sQtJz8nA3Dc" frameborder="0" allowfullscreen></iframe>
 
@@ -79,6 +79,10 @@ _Running CP/M 2.2_
 ![Figure 6]({{site.url}}/assets/img/mbasic.jpg)
 
 _Running MBASIC, a version of BASIC that is nice enough to not be case sensitive!_
+
+![Figure 7]({{site.url}}/assets/img/survey.jpg)
+
+_Running the system survey command._
 
 Code and schematics
 -------------------
