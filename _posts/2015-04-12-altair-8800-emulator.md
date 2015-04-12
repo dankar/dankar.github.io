@@ -11,9 +11,17 @@ Over the winter I started working on an Intel 8080 emulator which later turned i
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sQtJz8nA3Dc" frameborder="0" allowfullscreen></iframe>
 
-_An example of booting CP/M 2.2 on the finished emulator. The CPU is first set to jump to 0xff00 where the disk bootloader ROM is located. Then I single step a few instructions and then hit the RUN switch.
+/An example of booting CP/M 2.2 on the finished emulator. The CPU is first set to jump to 0xff00 where the disk bootloader ROM is located. Then I single step a few instructions and then hit the RUN switch./
+
+Description
+-----------
 
 After completing the Intel 8080 emulator I got interested in the hardware part of the Altair 8800. The front panel consists of a bunch of LEDs showing the status, the data bus and the address bus. There are 16 simple switches acting as address, data and sense input (8 of the switches can be read by the CPU with port IO on port 0xff), as well as some momentary spring loaded switches that controls examine/deposit etc. The original Altair 8800 has additional features on the front panel which I considered unnecessary for my clone (protect/unprotect memory etc.)
+
+The MCU running the emulator is currently an atmega328 (Arduino Uno). I might change this in the future, but the ease of prototyping won this time.
+
+Building
+--------
 
 The first revision of the panel was a prototype created on perfboard which soon got way out of hand.
 
@@ -26,16 +34,40 @@ I then decided to create a real schematic and PCB in KiCad and get it manufactur
 The results were pretty okay considering I had no idea what I was doing:
 
 ![Figure 1]({{site.url}}/assets/img/panel.sch.svg)
+
 ![Figure 2]({{site.url}}/assets/img/panel-brd.svg)
 
 I placed an order from seeedstudio.com and a week later I had my PCBs.
 
 ![Figure 3]({{site.url}}/assets/img/pcb_manu.jpg)
+/The PCBs as delivered from seeedstudio.com/
+
 ![Figure 4]({{site.url}}/assets/img/finished_pcb.jpg)
+/After a lot of soldering/
 
 After a night of soldering I had the result shown in the first video.
 
-The design included a surface mounted MicroSD holder which I still don't have so I've connected a full size SD holder by wire on the connector. Not pretty but it works.
+Components
+----------
+
+The board consists of a lot of LEDs, resistors and switches which are controlled by shift registers (74HC165 for input from switches and 74HC565 for output to the LEDs.)
+The panel also has 23LC1024 SPI SRAM chip which is used for the Altair memory. The atmega328 does not have enough internal RAM to allow for 64K of memory.
+
+An MicroSD holder is mounted on the panel for storage of ROM and diskette files. The current build does not have the MicroSD holder but instead a full size SD holder mounted by wire to the 13 pin connector.
+
+Everything on the panel is attached to the SPI bus on the atmega328.
+
+The current code is fairly slow. A couple of times slower than the original Altair 8800. There is room for optimization or even a faster MCU.
+
+Running
+-------
+
+The code currently loads the file "88dskrom.bin" from the SD card and places it at 0xff00 in memory. This is a standard disk loader ROM for the 88-DCDD.
+
+The 88-DCDD reads and writes the files "disk1.bin" and "disk2.bin" from the SD card. Consequently, CP/M 2.2 can be booted by adding it as "disk1.bin" on the SD card and then starting execution from 0xff00.
+
+Code and schematics
+-------------------
 
 All of the code and the PCB schematics is available at [Github](http://www.github.com/dankar/altair8800).
 
