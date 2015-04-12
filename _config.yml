@@ -15,7 +15,7 @@ markdown: kramdown
 paginate: 10
 paginate_path: "page:num"
 
-title : Testpage
+title : dankar
 tagline: 
 author :
   name : Daniel Karling
