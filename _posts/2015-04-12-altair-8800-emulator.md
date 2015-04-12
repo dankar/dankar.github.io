@@ -49,9 +49,7 @@ _The PCBs as delivered from seeedstudio.com_
 
 ![Figure 4]({{site.url}}/assets/img/finished_pcb.jpg)
 
-_After a lot of soldering_
-
-After a night of soldering I had the result shown in the first video.
+_After a night of soldering I had the result shown in the first video_
 
 Components
 ----------
