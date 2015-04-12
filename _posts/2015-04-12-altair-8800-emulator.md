@@ -11,7 +11,7 @@ Over the winter I started working on an [Intel 8080](http://en.wikipedia.org/wik
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sQtJz8nA3Dc" frameborder="0" allowfullscreen></iframe>
 
-_An example of booting CP/M 2.2 on the finished emulator. The CPU is first set to jump to 0xff00 where the disk bootloader ROM is located. Then I single step a few instructions and then hit the RUN switch._
+_An example of booting [CP/M 2.2](http://en.wikipedia.org/wiki/CP/M) on the finished emulator. The CPU is first set to jump to 0xff00 where the disk bootloader ROM is located. Then I single step a few instructions and then hit the RUN switch._
 
 Description
 -----------
